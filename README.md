@@ -3,9 +3,9 @@ My own dynamic website . Coded using ASP.NET
 
 Home Page
 
-![MyWebsite](https://www.hizliresim.com/m9nk3vb)
+![MyWebsite](https://i.hizliresim.com/m9nk3vb.png)
 
 Admin Page
-![MyWebsite](https://www.hizliresim.com/j2nw00s)
+![MyWebsite](https://i.hizliresim.com/j2nw00s.png)
 
 
