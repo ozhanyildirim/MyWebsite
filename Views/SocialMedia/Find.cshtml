@@ -1,0 +1,27 @@
+﻿@model MyCv.Models.Entity.SocialMedia
+
+@{
+    ViewBag.Title = "Find";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Social Media Edit Page</h2>
+
+<form class="form-group" method="post">
+
+    <br />
+    @Html.Label("Social Media Name")
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Social Media Link")
+    @Html.TextBoxFor(x => x.Link, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Social Media Icon")
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info"> Edit </button>
+
+</form>
+
