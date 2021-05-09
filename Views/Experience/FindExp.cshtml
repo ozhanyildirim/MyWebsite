@@ -1,0 +1,34 @@
+﻿@model MyCv.Models.Entity.Experiences
+@{
+    ViewBag.Title = "FindExp";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Edit Experience</h4>
+<br />
+<form class="form-group" method="post">
+
+    @Html.Label("ExpId")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+
+    <br />
+
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("SubTitle")
+    @Html.TextBoxFor(x => x.Subtitle, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Explanation")
+    @Html.TextAreaFor(x => x.Explanation, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info"> Edit </button>
+
+</form>

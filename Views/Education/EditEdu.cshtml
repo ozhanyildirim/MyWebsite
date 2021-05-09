@@ -1,0 +1,40 @@
+﻿@model MyCv.Models.Entity.Educations
+@{
+    ViewBag.Title = "EditEdu";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>EditEdu</h2>
+
+<br />
+<form class="form-group" method="post">
+
+    @Html.Label("ExpId")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+
+
+    <br />
+
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+  
+
+    <br />
+    @Html.Label("SubTitle")
+    @Html.TextBoxFor(x => x.Subtitle, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("SubTitle2")
+    @Html.TextBoxFor(x => x.Subtitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("GPA")
+    @Html.TextAreaFor(a => a.GPA, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info"> Edit </button>
+
+</form>

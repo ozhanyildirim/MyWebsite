@@ -1,0 +1,38 @@
+﻿@model MyCv.Models.Entity.Educations
+
+@{
+    ViewBag.Title = "AddEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Add Education</h2>
+
+<br />
+
+<form class="form-group" method="post">
+    <br />
+
+    @Html.Label("School Name")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Title, "", new { @style = "color:red" })
+
+    <br />
+    @Html.Label("SubTitle")
+    @Html.TextBoxFor(x => x.Subtitle, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("SubTitle2")
+    @Html.TextBoxFor(x => x.Subtitle2, new { @class = "form-control" })
+    <br />
+    @Html.Label("GPA")
+    @Html.TextBoxFor(a => a.GPA, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.GPA, "", new { @style = "color:red" })
+
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+
+    <br />
+
+    <button class="btn btn-info"> Add Education </button>
+
