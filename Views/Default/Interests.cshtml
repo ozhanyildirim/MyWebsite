@@ -1,0 +1,12 @@
+﻿@using MyCv.Models.Entity
+@model List<Interests>
+
+<div class="resume-section-content">
+
+    <h2 class="mb-5" { style = "color:#bd5d38"}>Interests</h2>
+    @foreach (var x in Model)
+    {
+        <p>@x.Description</p>
+        <p class="mb-0">@x.Description2</p>
+    }
+</div>

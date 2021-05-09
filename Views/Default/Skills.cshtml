@@ -1,0 +1,29 @@
+﻿@using MyCv.Models.Entity
+@model List<Skills>
+
+<div class="resume-section-content">
+    <h2 class="mb-5" { style = "color:#bd5d38"}>Skills</h2>
+    <div class="subheading mb-3" { style = "color:#bd5d38"}>Programming Languages & Tools</div>
+    <ul class="list-inline dev-icons">
+        <li class="list-inline-item" { style="color:#bd5d38" } title="HTML5"><i class="fab fa-html5"></i></li>
+        <li class="list-inline-item" { style="color:#17a2b8" }><i class="fab fa-css3-alt"></i></li>
+        <li class="list-inline-item" { style="color: #ffc107" }><i class="fab fa-js-square"></i></li>
+        <li class="list-inline-item" { style="color: #dc3545" }><i class="fab fa-angular"></i></li>
+        <li class="list-inline-item" { style="color: #17a2b8" }><i class="fab fa-react"></i></li>
+        <li class="list-inline-item" { style="color: #28a745" }><i class="fab fa-node-js"></i></li>
+        <li class="list-inline-item" { style="color:#17a2b8" }><i class="fab fa-java"></i></li>
+        <li class="list-inline-item" { style="color:#28a745" } title="Spring "><i class="fas fa-leaf"></i></li>
+        <li class="list-inline-item" { style="color:#6f42c1" }><i class="fab fa-cuttlefish"></i></li>
+
+    </ul>
+    <div class="subheading mb-3" { style = "color:#bd5d38"}>Workflow</div>
+    <ul class="fa-ul mb-0">
+        @foreach (var x in Model)
+        {
+        <li>
+            <span class="fa-li" { style = "color:#17a2b8"}><i class="fas fa-check"></i></span>
+            @x.Skills1
+        </li>
+        }
+   </ul>
+</div>
