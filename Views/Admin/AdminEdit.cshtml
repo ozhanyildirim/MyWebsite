@@ -1,0 +1,24 @@
+﻿@model MyCv.Models.Entity.Admin
+
+@{
+    ViewBag.Title = "AdminEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AdminEdit</h2>
+
+<form class="form-group" method="post">
+
+    <br />
+    @Html.Label("USER NAME")
+    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("PASSWORD")
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+
+    <br />
+
+    <button class="btn btn-info"> Edit </button>
+
+</form>
